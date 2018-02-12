@@ -1,0 +1,462 @@
+/** The main containers\backgrounds **/
+body {
+	background: #F5F7FA;
+	margin:0;
+	padding:0;
+	font-family: 'Helvetica';
+	font-size: 17px;
+	line-height: 120%;
+}
+
+#container{
+	width: 65%;
+	margin: 20px auto;
+	padding: 10px;
+	box-shadow: 0 5px 5px 5px #CCCCCC;
+	background: white;
+}
+
+#content{
+	overflow: auto;
+	width: 90%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	display:block;
+}
+
+#content img{
+	margin:auto;
+	display:block;
+	max-width:60%;
+	max-height:60%;
+}
+
+#content p{
+	text-align: left;
+}
+
+
+/** Error box **/
+#error-box{
+	background: #fbecec;
+	border-style: solid;
+    border-width: 2px;
+    border-color: #813535;
+    border-radius: 5px;
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15;
+
+}
+
+#error-box p{
+	margin:0;
+	margin:5px;
+	padding:0px 5px 5px 5px;
+}
+
+/** Summary box for question descriptions**/
+#summary-box{
+	background: #dae4ed;
+	background: linear-gradient(to right, #f4f8fc, WHITE, #f4f8fc);
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	padding-bottom:15px;
+
+}
+
+#summary-box p{
+	margin:0;
+	margin-bottom:5px;
+	padding:5px 15px 15px 15px;
+}
+
+
+#result-box{
+	width:65%;
+	margin:auto;
+}
+
+#result-box .failed{
+	color: #c94a4a;
+}
+
+#result-box .passed{
+	color: #4ac97b;
+}
+
+#result-box p{
+	text-align: center;
+}
+
+
+
+/** Text formatting **/
+h1{
+	font-size: 24px;
+	color:#324376;
+	text-align: center;
+}
+h2{
+	font-size: 24px;
+	color:#586BA4;
+}
+h3{
+	font-size: 24px;
+	color:#E8A84A;
+}
+
+h4{
+	font-size: 20px;
+	color:#813535;
+	margin:0;
+	padding:5px;
+}
+
+
+/** Table settings **/
+table{
+	table-layout:fixed;
+	margin:auto;
+	border-spacing:0;
+	margin-top:15px;
+	margin-bottom:20px;
+	width: 100%;
+	max-width:100%;
+}
+
+table .styled{
+}
+
+.styled thead{
+	margin-top:10px;
+	background: #cdd5ed;
+}
+
+.styled td .invisible{
+	font-size: 0px;
+}
+
+.styled thead th{
+	padding: 5px 10px;
+	text-align:left;
+}
+
+table.styled  tr:nth-child(odd) td{
+	background:#EDF1F7;
+}
+
+table.styled  td{
+	padding: 5px 10px;
+}
+
+table.styled  a{
+	font-weight: bold;
+	color: #3b5091;
+	text-decoration:none;
+}
+
+table.styled input[type=submit]{
+	color: #3b5091;
+	background-color: transparent;
+	text-decoration:none;
+}
+
+table.styled input[type=submit]:hover{
+	color: #E8A84A;
+	background-color: transparent;
+	text-decoration:none;
+}
+
+table.styled input[type=submit]:focus{
+	outline:0;
+}
+
+input[type=search]{
+	margin-bottom:10px;
+	font-family: 'Helvetica';
+	font-size:16xp;
+}
+
+
+/** Button stylings **/
+button{
+	background-color: #cdd5ed;
+	color: black;
+	font-size: 17px;
+	border: none;
+	appearance: none;
+	box-shadow: none;
+	margin-top:10px;
+	margin:auto;
+	padding: 5px 15px 5px 15px;
+}
+
+button:hover{
+	background-color:#E8A84A;
+}
+
+button:active{
+	background-color:#ffb344;
+}
+
+/** Editable forms **/
+form {
+    margin:auto;
+	width:65%;
+}
+
+form input{
+	padding: 3px 0px;
+	font-size:17xp;
+	font-family: 'Helvetica';
+	margin:2px;
+}
+
+form input[type=submit]{
+	background-color: #cdd5ed;
+	color: black;
+	font-size: 17px;
+	font-family: 'Helvetica';
+	border: none;
+	display: inline-block;
+	width:100px;
+}
+
+form input[type=submit]:hover{
+	background-color:#E8A84A;
+}
+
+form input[type=submit]:active{
+	background-color:#ffb344;
+}
+
+select{
+	padding: 3px 0px;
+	font-size:16;
+	font-family: 'Helvetica';
+	margin:1px;
+}
+
+option{
+	padding: 3px 0px;
+	font-size:17xp;
+	font-family: 'Helvetica';
+	margin:2px;
+}
+
+
+/** Test and question editing **/
+.questionbox {
+	background-color: #f9fafc;
+	margin: 15px;
+	padding: 5px;
+}
+
+.questionedit {
+	width: 100%;
+}
+
+.answeredit{
+	width: 100%;
+}
+
+.questionbox input[type=submit]{
+	background-color: #edf2fc;
+	width: auto;
+	padding: 5px;
+}
+
+.questionbox button{
+	margin: 10px;
+	background-color: #edf2fc;
+}
+
+.questionedit input[type=text]{
+	width:70%;
+}
+
+.answeredit input[type=text]{
+	width:70%;
+}
+
+/** Question boxes and question display **/
+.question-box{
+	height: 350px;
+	display: none;
+	margin:auto;
+	width:65%;
+	text-align:left;
+	padding: 10px 10px 15px 10px;
+}
+
+.question-box button{
+	margin-top:30px;
+	background-color: #cdd5ed;
+}
+
+.question-box .boxbuttons{
+	width:100%;
+	margin: auto;
+	text-align:center;
+}
+
+.question-box p {
+	font-size:18px;
+}
+
+.question-box label {
+	font-size: 17px;
+}
+
+.boxbuttons{
+	width:65%;
+	margin: auto;
+}
+
+
+/** Questions sidebar **/
+#questions-sidebar{
+	display: block;
+	float: left;
+	padding: 5px;
+}
+
+#sidebar-buttons{
+	column-count: 2;
+    column-gap: 10px;
+}
+
+#questions-sidebar button{
+	background-color: #cdd5ed;
+	display: block;
+	margin-bottom: 3px;
+	/* Pagebreak rules for elements*/
+	-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+    page-break-inside: avoid; /* Firefox */
+    break-inside: avoid; /* IE 10+ */
+}
+
+#questions-sidebar button:hover{
+	background-color:#E8A84A;
+}
+
+#questions-sidebar button:active{
+	background-color:#ffb344;
+}
+
+#questions-sidebar button:focus{
+	outline:0;
+	background-color:#ffb344;
+}
+
+#questions-sidebar .done{
+	background-color:#f2f4f9;
+}
+
+#questions-sidebar p{
+	text-align: center;
+	font-size: 18px;
+
+}
+
+#questions-sidebar form{
+	width:auto;
+}
+
+
+/** Header and navbar **/
+nav{
+	background: #586BA4;
+	background: linear-gradient(to right, #586BA4, #3b5091);
+	width:100%;
+}
+
+nav img{
+	float: left;
+	display:inline;
+    padding: 10px 10px;
+}
+
+nav ul {
+	height: 58px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li {
+	float: right;
+	display: block;
+	padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    display: block;
+    font-family: 'Helvetica', Arial,sans-serif;
+    font-size: 13px;
+    letter-spacing: 0;
+	margin: 0;
+    padding: 19px 20px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+	border-left:1px solid #B3BBD5;
+}
+
+nav a:hover {
+	color: #fff;
+	background-color: #E8A84A;
+}
+
+/** Drop-down language select settings **/
+.dropdown {
+    z-index: 2;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content p{
+	 font-weight: bold;
+	 margin-left: 10px;
+	 margin-bottom: 10px;
+}
+
+.dropdown-content a {
+	text-align:center;
+    color: black;
+	margin: none;
+    display: block;
+    padding: 10px 5px 10px 5px;
+	border-left: none;
+
+}
+
+.dropdown-content a:hover {
+	background-color: #586BA4;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/** Footer **/
+footer{
+	background: #B3BBD5;
+	background: linear-gradient(to right, #cdd5ed, #dde3f5 );
+	display:block;
+	text-align: center;
+}

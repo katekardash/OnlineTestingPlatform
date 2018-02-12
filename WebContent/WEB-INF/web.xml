@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Testing</display-name>
+
+	<servlet>
+		<servlet-name>Main</servlet-name>
+		<servlet-class>ua.nure.kardash.Testing.Web.MainController</servlet-class>
+	</servlet>
+
+	<listener>
+	    <listener-class>
+	    	ua.nure.kardash.Testing.Web.InitListener
+	    </listener-class>
+	</listener>
+
+ 	<error-page>
+        <location>/Error</location>
+    </error-page>
+
+	<servlet-mapping>
+		<servlet-name>Main</servlet-name>
+		<url-pattern>/Index</url-pattern>
+		<url-pattern>/Login</url-pattern>
+		<url-pattern>/Register</url-pattern>
+		<url-pattern>/Error</url-pattern>
+
+		<url-pattern>/Journal</url-pattern>
+		<url-pattern>/Tests</url-pattern>
+		<url-pattern>/Tests/*</url-pattern>
+
+		<url-pattern>/Users</url-pattern>
+		<url-pattern>/EditTest</url-pattern>
+
+	</servlet-mapping>
+
+</web-app>

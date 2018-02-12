@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib
+        PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+    "http://java.sun.com/j2ee/dtd/web-jsptaglibrary_1_2.dtd">
+
+<taglib>
+   <tlib-version>1.0</tlib-version>
+   <jsp-version>2.0</jsp-version>
+   <short-name>Custom Tags For Testing Project</short-name>
+
+   <tag>
+      <name>difficulty</name>
+      <tag-class>ua.nure.kardash.Testing.Web.Tags.DifficultyTag</tag-class>
+      <body-content>scriptless</body-content>
+
+      <attribute>
+         <name>lang</name>
+      </attribute>
+   </tag>
+
+   <tag>
+      <name>timeTaken</name>
+      <tag-class>ua.nure.kardash.Testing.Web.Tags.TimeTakenTag</tag-class>
+      <body-content>scriptless</body-content>
+   </tag>
+
+
+</taglib>

@@ -1,0 +1,12 @@
+2017-09-25 09:47:36,997 [INFO ][            DB] - Retrieving test results from database
+2017-09-25 09:47:36,997 [INFO ][            DB] - Retrieving test results from database
+2017-09-25 09:47:37,324 [INFO ][            DB] - Retrieval failed: Syntax error: Encountered "tr" at line 1, column 1.
+2017-09-25 09:47:37,324 [INFO ][            DB] - Retrieval failed: Syntax error: Encountered "tr" at line 1, column 1.
+2017-09-25 09:47:44,031 [INFO ][            DB] - Retrieving test results from database
+2017-09-25 09:47:44,031 [INFO ][            DB] - Retrieving test results from database
+2017-09-25 09:47:44,294 [INFO ][            DB] - Retrieval failed: Syntax error: Encountered "tr" at line 1, column 1.
+2017-09-25 09:47:44,294 [INFO ][            DB] - Retrieval failed: Syntax error: Encountered "tr" at line 1, column 1.
+2017-09-25 09:47:58,036 [INFO ][            DB] - Retrieving test results from database
+2017-09-25 09:47:58,036 [INFO ][            DB] - Retrieving test results from database
+2017-09-25 09:47:58,322 [INFO ][            DB] - Successfully retrieved 8 entries.
+2017-09-25 09:47:58,322 [INFO ][            DB] - Successfully retrieved 8 entries.

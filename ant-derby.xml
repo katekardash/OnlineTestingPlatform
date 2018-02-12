@@ -1,0 +1,52 @@
+<project name="Derby">
+<!--
+ Derby home (we use the internal JavaDB of JDK (= Apache Derby)
+-->
+	<property name="derby.home" value="C:\Program Files\Java\jdk1.8.0_131\db" />
+	<!--  Derby libraries  -->
+	<path id="derby.classpath">
+		<fileset dir="${derby.home}/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	<!--  To start/stop derby server script (macros)  -->
+	<macrodef name="server">
+		<attribute name="arg" />
+		<sequential>
+			<java classname="org.apache.derby.drda.NetworkServerControl">
+				<arg value="@{arg}" />
+				<classpath refid="derby.classpath" />
+			</java>
+		</sequential>
+	</macrodef>
+	<!--  To start the Derby server  -->
+	<target name="server-start">
+		<server arg="start" />
+	</target>
+	<!--  To stop the Derby server  -->
+	<target name="server-stop">
+		<server arg="shutdown" />
+	</target>
+	<!--  To run script (macros)  -->
+	<macrodef name="run">
+		<attribute name="script" />
+		<sequential>
+			<java classname="org.apache.derby.tools.ij" fork="on">
+				<arg value="@{script}" />
+				<classpath refid="derby.classpath" />
+			</java>
+		</sequential>
+	</macrodef>
+	<!--  Creates the DB  -->
+	<target name="run-db-create">
+		<run script="sql/create-db.sql" />
+	</target>
+	<!--  Fills DB with base info  -->
+	<target name="run-db-fill">
+		<run script="sql/fill-db.sql" />
+	</target>
+	<!--  Test-selects stuff from DB  -->
+	<target name="run-select">
+		<run script="sql/select-test.sql" />
+	</target>
+</project>
